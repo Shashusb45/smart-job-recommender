@@ -9,5 +9,4 @@ public class SmartJobRecommenderApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SmartJobRecommenderApplication.class, args);
 	}
-
 }
