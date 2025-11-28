@@ -15,7 +15,9 @@ public class JobController {
     public JobController(JobRepository repo) { this.repo = repo; }
 
     @GetMapping
-    public List<Job> getAll() { return repo.findAll(); }
+    public List<Job> getAll() { 
+    	return repo.findAll(); 
+    	}
 
     @GetMapping("/{id}")
     public ResponseEntity<Job> get(@PathVariable Long id) {
@@ -23,7 +25,9 @@ public class JobController {
     }
 
     @PostMapping
-    public Job create(@RequestBody Job job) { return repo.save(job); }
+    public Job create(@RequestBody Job job) { 
+    	return repo.save(job); 
+    	}
 
     @PutMapping("/{id}")
     public ResponseEntity<Job> update(@PathVariable Long id, @RequestBody Job updated) {
